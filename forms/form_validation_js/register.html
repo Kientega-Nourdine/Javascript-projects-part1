@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation javascript</title>
+
+    <!-- Custom CSS local link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form" class="register">
+            <h1>Register</h1>
+            
+            <div class="form-group">
+                <div class="input-control">
+                    <label for="firstname">Firtname:<sup> *</sup></label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Kientega">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="lastname">Lastname:<sup> *</sup></label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Nourdine">
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email:<sup> *</sup></label>
+                <input type="text" id="email" name="email" placeholder="kienteganourdine72@gmail.com">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password:<sup> *</sup></label>
+                <input type="password" id="password" name="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="confirm-password">Confirm password:<sup> *</sup></label>
+                <input type="password" id="confirm-password" name="confirm-password">
+                <div class="error"></div>
+            </div>
+
+            <div class="alert">
+                This sign <sup>*</sup> indicate than the field is required
+            </div>
+            <br>
+
+            <div>
+                <button type="submit">Submit</button>
+                <div class="btn-login">Have you albredy account ? <a href="./login.html">LoggedIn</a></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Custom Js local link -->
+    <script src="./script.js"></script>
+</body>
+</html>

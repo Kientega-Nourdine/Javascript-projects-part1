@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- google materials icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- local css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="generator">
+            <h1>Password Generator</h1>
+            <div class="password-wrap">
+                <input type="text" id="password" placeholder="Generate a password" readonly>
+                <button class="material-icons" id="copy">content_copy</button>
+            </div>
+
+            <div class="option">
+                <span>Password length:</span>
+                <input type="number" id="length" value="16" >
+            </div>
+
+            <div class="option">
+                <span>Include Uppercase Letters:</span>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="option">
+                <span>Include Lowercase Letters:</span>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="option">
+                <span>Include Numbers:</span>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+            <div class="option">
+                <span>Include Symbols:</span>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+
+            <button type="submit" id="generate">Generate Password</button>
+        </div>
+    </main>
+
+
+
+    <!-- local js link -->
+    <script src="./script.js"></script>
+</body>
+</html>
